@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0AB18CCF2C84C3C400D63FE8 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB18CCE2C84C3C400D63FE8 /* RegistrationView.swift */; };
+		0AB18CD22C84C5E100D63FE8 /* ThreadsTextFieldModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB18CD12C84C5E100D63FE8 /* ThreadsTextFieldModifier.swift */; };
 		0AFF07842C84B78B008BBD7A /* ThreadsAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFF07832C84B78B008BBD7A /* ThreadsAppApp.swift */; };
 		0AFF07862C84B78B008BBD7A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFF07852C84B78B008BBD7A /* ContentView.swift */; };
 		0AFF07882C84B78C008BBD7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AFF07872C84B78C008BBD7A /* Assets.xcassets */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0AB18CCE2C84C3C400D63FE8 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
+		0AB18CD12C84C5E100D63FE8 /* ThreadsTextFieldModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadsTextFieldModifier.swift; sourceTree = "<group>"; };
 		0AFF07802C84B78B008BBD7A /* ThreadsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThreadsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AFF07832C84B78B008BBD7A /* ThreadsAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadsAppApp.swift; sourceTree = "<group>"; };
 		0AFF07852C84B78B008BBD7A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -39,6 +43,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0AB18CD02C84C5B200D63FE8 /* ViewModifiers */ = {
+			isa = PBXGroup;
+			children = (
+				0AB18CD12C84C5E100D63FE8 /* ThreadsTextFieldModifier.swift */,
+			);
+			path = ViewModifiers;
+			sourceTree = "<group>";
+		};
 		0AFF07772C84B78B008BBD7A = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +95,7 @@
 		0AFF07912C84B7A3008BBD7A /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				0AB18CD02C84C5B200D63FE8 /* ViewModifiers */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -136,8 +149,8 @@
 		0AFF07982C84B7EB008BBD7A /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
-				0AFF079A2C84B841008BBD7A /* ViewModel */,
 				0AFF07992C84B83D008BBD7A /* View */,
+				0AFF079A2C84B841008BBD7A /* ViewModel */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -146,6 +159,7 @@
 			isa = PBXGroup;
 			children = (
 				0AFF079B2C84B858008BBD7A /* LoginView.swift */,
+				0AB18CCE2C84C3C400D63FE8 /* RegistrationView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -171,7 +185,6 @@
 				18D74A9ECE88CD0FD05A5E1E /* Pods-ThreadsApp.debug.xcconfig */,
 				34F3B544CB1D7FE958130428 /* Pods-ThreadsApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -273,7 +286,9 @@
 			files = (
 				0AFF079C2C84B858008BBD7A /* LoginView.swift in Sources */,
 				0AFF07862C84B78B008BBD7A /* ContentView.swift in Sources */,
+				0AB18CD22C84C5E100D63FE8 /* ThreadsTextFieldModifier.swift in Sources */,
 				0AFF07842C84B78B008BBD7A /* ThreadsAppApp.swift in Sources */,
+				0AB18CCF2C84C3C400D63FE8 /* RegistrationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
