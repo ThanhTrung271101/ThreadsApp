@@ -8,15 +8,17 @@
 import SwiftUI
 
 struct CircularProfileImageView: View {
+    let width: CGFloat
+    let height: CGFloat
     var body: some View {
         Image("annaclark")
             .resizable()
             .scaledToFill()
-            .frame(width: 44, height: 44)
+            .frame(width: width, height: height)
             .clipShape(Circle())
     }
 }
 
 #Preview {
-    CircularProfileImageView()
+    CircularProfileImageView(width: 44, height: 44)
 }

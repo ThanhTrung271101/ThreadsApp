@@ -10,7 +10,7 @@ import SwiftUI
 struct UserCell: View {
     var body: some View {
         HStack {
-            CircularProfileImageView()
+            CircularProfileImageView(width: 44, height: 44)
             
             VStack(alignment: .leading) {
                 Text("chrisbrown")
