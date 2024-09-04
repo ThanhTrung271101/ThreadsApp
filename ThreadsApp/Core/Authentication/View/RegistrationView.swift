@@ -30,15 +30,12 @@ struct RegistrationView: View {
                 TextField("Enter your full name", text: $viewModel.fullName)
                     .modifier(ThreadsTextFieldModifier())
                 TextField("Enter your user name", text: $viewModel.userName)
+                    .textInputAutocapitalization(.never)
                     .modifier(ThreadsTextFieldModifier())
             }
             
             Button {
                 Task{ try await viewModel.createUser()}
-                viewModel.email = ""
-                viewModel.password = ""
-                viewModel.fullName = ""
-                viewModel.userName = ""
             } label: {
                 Text("Sign up")
                     .font(.subheadline)
@@ -66,7 +63,6 @@ struct RegistrationView: View {
                 .foregroundStyle(Color(.black))
             }
             .padding(.vertical, 16)
-
         }
     }
 }
