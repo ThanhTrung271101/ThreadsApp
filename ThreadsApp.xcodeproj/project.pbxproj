@@ -27,6 +27,8 @@
 		0AF7B2572C885CD500D0ACC4 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 0AF7B2562C885CD500D0ACC4 /* FirebaseStorage */; };
 		0AF7B2592C885EC800D0ACC4 /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF7B2582C885EC800D0ACC4 /* RegistrationViewModel.swift */; };
 		0AF7B25C2C885FD900D0ACC4 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF7B25B2C885FD900D0ACC4 /* AuthService.swift */; };
+		0AF7B2602C88645800D0ACC4 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF7B25F2C88645800D0ACC4 /* ContentViewModel.swift */; };
+		0AF7B2632C88B4AA00D0ACC4 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF7B2622C88B4AA00D0ACC4 /* LoginViewModel.swift */; };
 		0AFF07842C84B78B008BBD7A /* ThreadsAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFF07832C84B78B008BBD7A /* ThreadsAppApp.swift */; };
 		0AFF07862C84B78B008BBD7A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFF07852C84B78B008BBD7A /* ContentView.swift */; };
 		0AFF07882C84B78C008BBD7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AFF07872C84B78C008BBD7A /* Assets.xcassets */; };
@@ -52,6 +54,8 @@
 		0AF7B24D2C885C3300D0ACC4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0AF7B2582C885EC800D0ACC4 /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
 		0AF7B25B2C885FD900D0ACC4 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		0AF7B25F2C88645800D0ACC4 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		0AF7B2622C88B4AA00D0ACC4 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		0AFF07802C84B78B008BBD7A /* ThreadsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThreadsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AFF07832C84B78B008BBD7A /* ThreadsAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadsAppApp.swift; sourceTree = "<group>"; };
 		0AFF07852C84B78B008BBD7A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -219,6 +223,22 @@
 			path = Service;
 			sourceTree = "<group>";
 		};
+		0AF7B25D2C88643C00D0ACC4 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0AF7B25F2C88645800D0ACC4 /* ContentViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		0AF7B25E2C88643E00D0ACC4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0AFF07852C84B78B008BBD7A /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		0AFF07772C84B78B008BBD7A = {
 			isa = PBXGroup;
 			children = (
@@ -317,7 +337,8 @@
 		0AFF07972C84B7E6008BBD7A /* Root */ = {
 			isa = PBXGroup;
 			children = (
-				0AFF07852C84B78B008BBD7A /* ContentView.swift */,
+				0AF7B25E2C88643E00D0ACC4 /* View */,
+				0AF7B25D2C88643C00D0ACC4 /* ViewModel */,
 			);
 			path = Root;
 			sourceTree = "<group>";
@@ -345,6 +366,7 @@
 			isa = PBXGroup;
 			children = (
 				0AF7B2582C885EC800D0ACC4 /* RegistrationViewModel.swift */,
+				0AF7B2622C88B4AA00D0ACC4 /* LoginViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -480,10 +502,12 @@
 				0AFF07862C84B78B008BBD7A /* ContentView.swift in Sources */,
 				0AF7B2402C859B0E00D0ACC4 /* ThreadCell.swift in Sources */,
 				0AB18CE62C84D39000D63FE8 /* ActivityView.swift in Sources */,
+				0AF7B2632C88B4AA00D0ACC4 /* LoginViewModel.swift in Sources */,
 				0AF7B2432C85C7D600D0ACC4 /* CircularProfileImageView.swift in Sources */,
 				0AF7B2452C85FAB900D0ACC4 /* UserCell.swift in Sources */,
 				0AB18CD52C84CCCF00D63FE8 /* ThreadsTabView.swift in Sources */,
 				0AF7B2482C86081D00D0ACC4 /* ProfileThreadFilter.swift in Sources */,
+				0AF7B2602C88645800D0ACC4 /* ContentViewModel.swift in Sources */,
 				0AB18CE32C84D34900D63FE8 /* ThreadsCreationView.swift in Sources */,
 				0AB18CD22C84C5E100D63FE8 /* ThreadsTextFieldModifier.swift in Sources */,
 				0AFF07842C84B78B008BBD7A /* ThreadsAppApp.swift in Sources */,
