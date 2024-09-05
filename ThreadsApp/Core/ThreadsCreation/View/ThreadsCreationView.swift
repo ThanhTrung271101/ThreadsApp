@@ -14,7 +14,7 @@ struct ThreadsCreationView: View {
         NavigationStack {
             VStack {
                 HStack {
-                    CircularProfileImageView(width: 44, height: 44)
+                    CircularProfileImageView(user: nil, size: .small)
                     
                     VStack(alignment: .leading) {
                         Text("charles_leclerc")
