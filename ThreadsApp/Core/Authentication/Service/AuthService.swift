@@ -23,6 +23,7 @@ class AuthService {
         do {
             let result = try await Auth.auth().signIn(withEmail: email, password: password)
             self.userSession = result.user
+            try await UserService.shared.fetchCurrentUser()
         } catch {
             print("DEBUG: Failed to login with error \(error.localizedDescription)")
         }
@@ -42,6 +43,7 @@ class AuthService {
     func signOut() {
         try? Auth.auth().signOut() // sign out on backend
         self.userSession = nil // this removes session locally and updates routing
+        UserService.shared.reset()
     }
     
     @MainActor

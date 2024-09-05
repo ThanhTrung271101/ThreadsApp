@@ -5,6 +5,7 @@
 //  Created by Thành Trung on 4/9/24.
 //
 
+import Firebase
 import FirebaseAuth
 import FirebaseFirestore
 
@@ -27,5 +28,9 @@ class UserService {
         self.currentUser = user
         
         print("DEBUG: User is \(user)")
+    }
+    
+    func reset() {
+        self.currentUser = nil
     }
 }
