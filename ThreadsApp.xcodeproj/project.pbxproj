@@ -42,6 +42,8 @@
 		0AFF5AB72C89AFAE00CF1EDD /* CurrentUserProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFF5AB62C89AFAE00CF1EDD /* CurrentUserProfileView.swift */; };
 		0AFF5ABA2C89B1C200CF1EDD /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFF5AB92C89B1C200CF1EDD /* ProfileHeaderView.swift */; };
 		0AFF5ABC2C89B6C600CF1EDD /* UserContentListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFF5ABB2C89B6C600CF1EDD /* UserContentListView.swift */; };
+		0AFF5ABF2C8A036200CF1EDD /* EditProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFF5ABE2C8A036200CF1EDD /* EditProfileViewModel.swift */; };
+		0AFF5AC12C8A052E00CF1EDD /* ImageUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFF5AC02C8A052E00CF1EDD /* ImageUploader.swift */; };
 		AE5A15930A8AC666E93D3499 /* Pods_ThreadsApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20E158B3E47A8472E67582B2 /* Pods_ThreadsApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -78,6 +80,8 @@
 		0AFF5AB62C89AFAE00CF1EDD /* CurrentUserProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentUserProfileView.swift; sourceTree = "<group>"; };
 		0AFF5AB92C89B1C200CF1EDD /* ProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
 		0AFF5ABB2C89B6C600CF1EDD /* UserContentListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserContentListView.swift; sourceTree = "<group>"; };
+		0AFF5ABE2C8A036200CF1EDD /* EditProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewModel.swift; sourceTree = "<group>"; };
+		0AFF5AC02C8A052E00CF1EDD /* ImageUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUploader.swift; sourceTree = "<group>"; };
 		18D74A9ECE88CD0FD05A5E1E /* Pods-ThreadsApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThreadsApp.debug.xcconfig"; path = "Target Support Files/Pods-ThreadsApp/Pods-ThreadsApp.debug.xcconfig"; sourceTree = "<group>"; };
 		20E158B3E47A8472E67582B2 /* Pods_ThreadsApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ThreadsApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		34F3B544CB1D7FE958130428 /* Pods-ThreadsApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThreadsApp.release.xcconfig"; path = "Target Support Files/Pods-ThreadsApp/Pods-ThreadsApp.release.xcconfig"; sourceTree = "<group>"; };
@@ -163,6 +167,7 @@
 				0AFF5AB82C89B1AB00CF1EDD /* Components */,
 				0AFF5AB32C89AF3D00CF1EDD /* CurrentUserProfile */,
 				0AF7B2492C861D5800D0ACC4 /* EditProfile */,
+				0AFF5ABD2C8A034200CF1EDD /* ViewModel */,
 				0AF7B2462C86080400D0ACC4 /* Model */,
 				0AB18CE72C84D39F00D63FE8 /* UserProfile */,
 			);
@@ -312,6 +317,7 @@
 			isa = PBXGroup;
 			children = (
 				0AF7B2662C88C4C000D0ACC4 /* UserService.swift */,
+				0AFF5AC02C8A052E00CF1EDD /* ImageUploader.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -433,6 +439,14 @@
 				0AFF5ABB2C89B6C600CF1EDD /* UserContentListView.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		0AFF5ABD2C8A034200CF1EDD /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0AFF5ABE2C8A036200CF1EDD /* EditProfileViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		11D6FA7FC9AB86CB90FE302F /* Frameworks */ = {
@@ -563,6 +577,7 @@
 				0AFF079C2C84B858008BBD7A /* LoginView.swift in Sources */,
 				0AF7B25C2C885FD900D0ACC4 /* AuthService.swift in Sources */,
 				0AFF5AB22C89A76A00CF1EDD /* PreviewProvider.swift in Sources */,
+				0AFF5ABF2C8A036200CF1EDD /* EditProfileViewModel.swift in Sources */,
 				0AF7B24C2C861D6C00D0ACC4 /* EditProfileView.swift in Sources */,
 				0AFF07862C84B78B008BBD7A /* ContentView.swift in Sources */,
 				0AF7B2672C88C4C000D0ACC4 /* UserService.swift in Sources */,
@@ -574,6 +589,7 @@
 				0AF7B2452C85FAB900D0ACC4 /* UserCell.swift in Sources */,
 				0AFF5AB02C89A2AA00CF1EDD /* ExploreViewModel.swift in Sources */,
 				0AB18CD52C84CCCF00D63FE8 /* ThreadsTabView.swift in Sources */,
+				0AFF5AC12C8A052E00CF1EDD /* ImageUploader.swift in Sources */,
 				0AF7B2482C86081D00D0ACC4 /* ProfileThreadFilter.swift in Sources */,
 				0AF7B2602C88645800D0ACC4 /* ContentViewModel.swift in Sources */,
 				0AF7B26A2C88C61A00D0ACC4 /* CurrentUserProfileViewModel.swift in Sources */,
