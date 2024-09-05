@@ -37,6 +37,8 @@
 		0AFF07882C84B78C008BBD7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AFF07872C84B78C008BBD7A /* Assets.xcassets */; };
 		0AFF078B2C84B78C008BBD7A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AFF078A2C84B78C008BBD7A /* Preview Assets.xcassets */; };
 		0AFF079C2C84B858008BBD7A /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFF079B2C84B858008BBD7A /* LoginView.swift */; };
+		0AFF5AB02C89A2AA00CF1EDD /* ExploreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFF5AAF2C89A2AA00CF1EDD /* ExploreViewModel.swift */; };
+		0AFF5AB22C89A76A00CF1EDD /* PreviewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFF5AB12C89A76A00CF1EDD /* PreviewProvider.swift */; };
 		AE5A15930A8AC666E93D3499 /* Pods_ThreadsApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20E158B3E47A8472E67582B2 /* Pods_ThreadsApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -68,6 +70,8 @@
 		0AFF07872C84B78C008BBD7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0AFF078A2C84B78C008BBD7A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0AFF079B2C84B858008BBD7A /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		0AFF5AAF2C89A2AA00CF1EDD /* ExploreViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewModel.swift; sourceTree = "<group>"; };
+		0AFF5AB12C89A76A00CF1EDD /* PreviewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewProvider.swift; sourceTree = "<group>"; };
 		18D74A9ECE88CD0FD05A5E1E /* Pods-ThreadsApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThreadsApp.debug.xcconfig"; path = "Target Support Files/Pods-ThreadsApp/Pods-ThreadsApp.debug.xcconfig"; sourceTree = "<group>"; };
 		20E158B3E47A8472E67582B2 /* Pods_ThreadsApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ThreadsApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		34F3B544CB1D7FE958130428 /* Pods-ThreadsApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThreadsApp.release.xcconfig"; path = "Target Support Files/Pods-ThreadsApp/Pods-ThreadsApp.release.xcconfig"; sourceTree = "<group>"; };
@@ -126,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				0AB18CDB2C84D2F100D63FE8 /* View */,
+				0AFF5AAE2C89A29E00CF1EDD /* ViewModel */,
 			);
 			path = Explore;
 			sourceTree = "<group>";
@@ -323,6 +328,7 @@
 		0AFF07942C84B7AC008BBD7A /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				0AFF5AB12C89A76A00CF1EDD /* PreviewProvider.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -384,6 +390,14 @@
 			children = (
 				0AF7B2582C885EC800D0ACC4 /* RegistrationViewModel.swift */,
 				0AF7B2622C88B4AA00D0ACC4 /* LoginViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		0AFF5AAE2C89A29E00CF1EDD /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0AFF5AAF2C89A2AA00CF1EDD /* ExploreViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -515,6 +529,7 @@
 				0AF7B2592C885EC800D0ACC4 /* RegistrationViewModel.swift in Sources */,
 				0AFF079C2C84B858008BBD7A /* LoginView.swift in Sources */,
 				0AF7B25C2C885FD900D0ACC4 /* AuthService.swift in Sources */,
+				0AFF5AB22C89A76A00CF1EDD /* PreviewProvider.swift in Sources */,
 				0AF7B24C2C861D6C00D0ACC4 /* EditProfileView.swift in Sources */,
 				0AFF07862C84B78B008BBD7A /* ContentView.swift in Sources */,
 				0AF7B2672C88C4C000D0ACC4 /* UserService.swift in Sources */,
@@ -523,6 +538,7 @@
 				0AF7B2632C88B4AA00D0ACC4 /* LoginViewModel.swift in Sources */,
 				0AF7B2432C85C7D600D0ACC4 /* CircularProfileImageView.swift in Sources */,
 				0AF7B2452C85FAB900D0ACC4 /* UserCell.swift in Sources */,
+				0AFF5AB02C89A2AA00CF1EDD /* ExploreViewModel.swift in Sources */,
 				0AB18CD52C84CCCF00D63FE8 /* ThreadsTabView.swift in Sources */,
 				0AF7B2482C86081D00D0ACC4 /* ProfileThreadFilter.swift in Sources */,
 				0AF7B2602C88645800D0ACC4 /* ContentViewModel.swift in Sources */,
