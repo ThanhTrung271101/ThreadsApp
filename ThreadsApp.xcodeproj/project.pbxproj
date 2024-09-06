@@ -49,6 +49,8 @@
 		0AFF5AC92C8A19D900CF1EDD /* ThreadCreationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFF5AC82C8A19D900CF1EDD /* ThreadCreationViewModel.swift */; };
 		0AFF5ACB2C8A19F100CF1EDD /* ThreadService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFF5ACA2C8A19F100CF1EDD /* ThreadService.swift */; };
 		0AFF5ACE2C8AE91F00CF1EDD /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFF5ACD2C8AE91F00CF1EDD /* FeedViewModel.swift */; };
+		0AFF5AD22C8AF26800CF1EDD /* UserContentListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFF5AD12C8AF26800CF1EDD /* UserContentListViewModel.swift */; };
+		0AFF5AD42C8AF59300CF1EDD /* Timestamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFF5AD32C8AF59300CF1EDD /* Timestamp.swift */; };
 		AE5A15930A8AC666E93D3499 /* Pods_ThreadsApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20E158B3E47A8472E67582B2 /* Pods_ThreadsApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -91,6 +93,8 @@
 		0AFF5AC82C8A19D900CF1EDD /* ThreadCreationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadCreationViewModel.swift; sourceTree = "<group>"; };
 		0AFF5ACA2C8A19F100CF1EDD /* ThreadService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadService.swift; sourceTree = "<group>"; };
 		0AFF5ACD2C8AE91F00CF1EDD /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
+		0AFF5AD12C8AF26800CF1EDD /* UserContentListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserContentListViewModel.swift; sourceTree = "<group>"; };
+		0AFF5AD32C8AF59300CF1EDD /* Timestamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timestamp.swift; sourceTree = "<group>"; };
 		18D74A9ECE88CD0FD05A5E1E /* Pods-ThreadsApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThreadsApp.debug.xcconfig"; path = "Target Support Files/Pods-ThreadsApp/Pods-ThreadsApp.debug.xcconfig"; sourceTree = "<group>"; };
 		20E158B3E47A8472E67582B2 /* Pods_ThreadsApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ThreadsApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		34F3B544CB1D7FE958130428 /* Pods-ThreadsApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThreadsApp.release.xcconfig"; path = "Target Support Files/Pods-ThreadsApp/Pods-ThreadsApp.release.xcconfig"; sourceTree = "<group>"; };
@@ -142,7 +146,6 @@
 			isa = PBXGroup;
 			children = (
 				0AB18CD82C84D2A400D63FE8 /* FeedView.swift */,
-				0AF7B23F2C859B0E00D0ACC4 /* ThreadCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -222,6 +225,7 @@
 			isa = PBXGroup;
 			children = (
 				0AF7B2422C85C7D600D0ACC4 /* CircularProfileImageView.swift */,
+				0AF7B23F2C859B0E00D0ACC4 /* ThreadCell.swift */,
 				0AF7B2442C85FAB900D0ACC4 /* UserCell.swift */,
 			);
 			path = Components;
@@ -348,6 +352,7 @@
 			isa = PBXGroup;
 			children = (
 				0AFF5AB12C89A76A00CF1EDD /* PreviewProvider.swift */,
+				0AFF5AD32C8AF59300CF1EDD /* Timestamp.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -449,8 +454,8 @@
 		0AFF5AB82C89B1AB00CF1EDD /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				0AFF5AB92C89B1C200CF1EDD /* ProfileHeaderView.swift */,
-				0AFF5ABB2C89B6C600CF1EDD /* UserContentListView.swift */,
+				0AFF5AD02C8AF24F00CF1EDD /* View */,
+				0AFF5ACF2C8AF24A00CF1EDD /* ViewModel */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -477,6 +482,23 @@
 				0AFF5ACD2C8AE91F00CF1EDD /* FeedViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		0AFF5ACF2C8AF24A00CF1EDD /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0AFF5AD12C8AF26800CF1EDD /* UserContentListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		0AFF5AD02C8AF24F00CF1EDD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0AFF5AB92C89B1C200CF1EDD /* ProfileHeaderView.swift */,
+				0AFF5ABB2C89B6C600CF1EDD /* UserContentListView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		11D6FA7FC9AB86CB90FE302F /* Frameworks */ = {
@@ -610,6 +632,7 @@
 				0AFF079C2C84B858008BBD7A /* LoginView.swift in Sources */,
 				0AF7B25C2C885FD900D0ACC4 /* AuthService.swift in Sources */,
 				0AFF5AB22C89A76A00CF1EDD /* PreviewProvider.swift in Sources */,
+				0AFF5AD42C8AF59300CF1EDD /* Timestamp.swift in Sources */,
 				0AFF5ABF2C8A036200CF1EDD /* EditProfileViewModel.swift in Sources */,
 				0AF7B24C2C861D6C00D0ACC4 /* EditProfileView.swift in Sources */,
 				0AFF07862C84B78B008BBD7A /* ContentView.swift in Sources */,
@@ -618,6 +641,7 @@
 				0AFF5ABC2C89B6C600CF1EDD /* UserContentListView.swift in Sources */,
 				0AB18CE62C84D39000D63FE8 /* ActivityView.swift in Sources */,
 				0AF7B2632C88B4AA00D0ACC4 /* LoginViewModel.swift in Sources */,
+				0AFF5AD22C8AF26800CF1EDD /* UserContentListViewModel.swift in Sources */,
 				0AF7B2432C85C7D600D0ACC4 /* CircularProfileImageView.swift in Sources */,
 				0AF7B2452C85FAB900D0ACC4 /* UserCell.swift in Sources */,
 				0AFF5AB02C89A2AA00CF1EDD /* ExploreViewModel.swift in Sources */,
