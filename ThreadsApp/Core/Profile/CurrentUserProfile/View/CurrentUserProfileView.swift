@@ -16,10 +16,10 @@ struct CurrentUserProfileView: View {
     var body: some View {
         NavigationStack {
             ScrollView(showsIndicators: false) {
-                
+
                 VStack(spacing: 20) {
                     ProfileHeaderView(user: currentUser)
-                    
+
                     Button {
                         showEditProfile.toggle()
                     } label: {
@@ -35,7 +35,7 @@ struct CurrentUserProfileView: View {
                                     .stroke(Color(.systemGray4), lineWidth: 1)
                             }
                     }
-                    
+
                     if let user = currentUser {
                         UserContentListView(user: user)
                     }

@@ -15,13 +15,13 @@ struct EditProfileView: View {
     @State private var isPrivateProfile = false
     @Environment(\.dismiss) var dismiss
     @StateObject var viewModel = EditProfileViewModel()
-    
+
     var body: some View {
         NavigationStack {
             ZStack {
                 Color(.systemGroupedBackground)
                     .ignoresSafeArea(edges: [.bottom, .horizontal])
-                
+
                 VStack {
                     HStack {
                         VStack(alignment: .leading) {
@@ -29,9 +29,9 @@ struct EditProfileView: View {
                                 .fontWeight(.semibold)
                             Text(user.fullName)
                         }
-                        
+
                         Spacer()
-                        
+
                         PhotosPicker(selection: $viewModel.seletedItem) {
                             if let image = viewModel.profileImage {
                                 image
@@ -44,25 +44,25 @@ struct EditProfileView: View {
                             }
                         }
                     }
-                    
+
                     Divider()
-                    
+
                     VStack(alignment: .leading) {
                         Text("Bio")
                             .fontWeight(.semibold)
                         TextField("Enter your bio ...", text: $bio, axis: .vertical)
                     }
-                    
+
                     Divider()
-                    
+
                     VStack(alignment: .leading) {
                         Text("Link")
                             .fontWeight(.semibold)
                         TextField("Add link ...", text: $link)
                     }
-                    
+
                     Divider()
-                    
+
                     Toggle("Private profile", isOn: $isPrivateProfile)
                 }
                 .font(.footnote)
@@ -74,7 +74,7 @@ struct EditProfileView: View {
                         .stroke(Color(.systemGray4), lineWidth: 1)
                 }
                 .padding()
-                
+
             }
             .navigationTitle("Edit Profile")
             .navigationBarTitleDisplayMode(.inline)
@@ -88,7 +88,7 @@ struct EditProfileView: View {
                     .font(.subheadline)
                     .foregroundStyle(Color(.black))
                 }
-                
+
                 ToolbarItem(placement: .topBarTrailing) {
                     Button {
                         Task {

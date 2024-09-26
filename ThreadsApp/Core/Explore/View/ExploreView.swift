@@ -18,7 +18,7 @@ struct ExploreView: View {
                         NavigationLink(value: user) {
                             VStack {
                                 UserCell(user: user)
-                                
+
                                 Divider()
                             }
                             .padding(.vertical, 4)

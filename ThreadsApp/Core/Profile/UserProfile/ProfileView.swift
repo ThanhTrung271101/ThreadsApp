@@ -9,14 +9,14 @@ import SwiftUI
 
 struct ProfileView: View {
     let user: User
-    
+
     var body: some View {
             ScrollView(showsIndicators: false) {
                 VStack(spacing: 20) {
                     ProfileHeaderView(user: user)
-                    
+
                     Button {
-                        
+
                     } label: {
                         Text("Follow")
                             .font(.subheadline)
@@ -26,7 +26,7 @@ struct ProfileView: View {
                             .background(Color(.black))
                             .clipShape(RoundedRectangle(cornerRadius: 8))
                     }
-                    
+
                     UserContentListView(user: user)
                 }
             }
