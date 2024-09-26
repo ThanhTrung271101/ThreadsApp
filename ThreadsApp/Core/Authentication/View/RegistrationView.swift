@@ -12,15 +12,15 @@ struct RegistrationView: View {
     @Environment(\.dismiss) private var dismiss
     var body: some View {
         VStack {
-            
+
             Spacer()
-            
+
             Image("threads-app-icon")
                 .resizable()
                 .scaledToFill()
                 .frame(width: 120, height: 120)
                 .padding()
-            
+
             VStack {
                 TextField("Enter your email", text: $viewModel.email)
                     .textInputAutocapitalization(.never)
@@ -33,9 +33,9 @@ struct RegistrationView: View {
                     .textInputAutocapitalization(.never)
                     .modifier(ThreadsTextFieldModifier())
             }
-            
+
             Button {
-                Task{ try await viewModel.createUser() }
+                Task { try await viewModel.createUser() }
             } label: {
                 Text("Sign up")
                     .font(.subheadline)
@@ -46,11 +46,11 @@ struct RegistrationView: View {
                     .clipShape(Capsule())
             }
             .padding(.vertical)
-            
+
             Spacer()
-            
+
             Divider()
-            
+
             Button {
                 dismiss()
             } label: {

@@ -15,7 +15,7 @@ enum ProfileImageSize {
     case medium
     case large
     case xLarge
-    
+
     var dimension: CGFloat {
         switch self {
         case .xxSmall:
@@ -36,7 +36,7 @@ enum ProfileImageSize {
 
 struct CircularProfileImageView: View {
     let user: User?
-    
+
     let size: ProfileImageSize
 
     var body: some View {

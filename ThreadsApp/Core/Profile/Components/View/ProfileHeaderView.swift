@@ -9,16 +9,16 @@ import SwiftUI
 
 struct ProfileHeaderView: View {
     let user: User?
-    
+
     init(user: User?) {
         self.user = user
     }
-    
+
     var body: some View {
         HStack(alignment: .top) {
-            
+
             VStack(alignment: .leading, spacing: 12) {
-                
+
                 VStack(alignment: .leading, spacing: 4) {
                     Text(user?.fullName ?? "")
                         .font(.title2)
@@ -26,7 +26,7 @@ struct ProfileHeaderView: View {
                     Text(user?.userName ?? "")
                         .font(.subheadline)
                 }
-                
+
                 if let bio = user?.bio {
                     Text(bio)
                         .font(.footnote)
@@ -35,9 +35,9 @@ struct ProfileHeaderView: View {
                     .font(.caption)
                     .foregroundStyle(Color(.systemGray2))
             }
-            
+
             Spacer()
-            
+
             CircularProfileImageView(user: user, size: .medium)
         }
     }

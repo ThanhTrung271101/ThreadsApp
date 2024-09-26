@@ -9,15 +9,15 @@ import FirebaseAuth
 import FirebaseFirestore
 
 class AuthService {
-    
+
     @Published var userSession: FirebaseAuth.User?
-    
+
     static let shared = AuthService()
-    
+
     init() {
         self.userSession = Auth.auth().currentUser
     }
-    
+
     @MainActor
     func login(withEmail email: String, password: String) async throws {
         do {
@@ -28,7 +28,7 @@ class AuthService {
             print("DEBUG: Failed to login with error \(error.localizedDescription)")
         }
     }
-    
+
     @MainActor
     func createUser(withEmail email: String, password: String, fullName: String, userName: String) async throws {
         do {
@@ -39,13 +39,13 @@ class AuthService {
             print("DEBUG: Failed to create user with error \(error.localizedDescription)")
         }
     }
-    
+
     func signOut() {
         try? Auth.auth().signOut() // sign out on backend
         self.userSession = nil // this removes session locally and updates routing
         UserService.shared.reset()
     }
-    
+
     @MainActor
     private func uploadUserData(
         withEmail email: String,

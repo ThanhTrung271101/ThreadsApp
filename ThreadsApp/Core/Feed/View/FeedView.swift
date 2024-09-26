@@ -29,7 +29,7 @@ struct FeedView: View {
         .toolbar {
             ToolbarItem(placement: .topBarTrailing) {
                 Button {
-                    
+
                 } label: {
                     Image(systemName: "arrow.counterclockwise")
                         .foregroundStyle(Color(.black))

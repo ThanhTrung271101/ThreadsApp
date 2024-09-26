@@ -12,11 +12,11 @@ import FirebaseAuth
 class ContentViewModel: ObservableObject {
     @Published var userSession: FirebaseAuth.User?
     private var cancellables = Set<AnyCancellable>()
-    
+
     init() {
         setupSubscriber()
     }
-    
+
     private func setupSubscriber() {
         AuthService.shared.$userSession.sink { [weak self] userSession in
             self?.userSession = userSession

@@ -11,24 +11,24 @@ struct ThreadsCreationView: View {
     @StateObject var viewModel = ThreadCreationViewModel()
     @State private var caption = ""
     @Environment(\.dismiss) var dismiss
-    
+
     private var user: User? {
         return UserService.shared.currentUser
     }
-    
+
     var body: some View {
         NavigationStack {
             VStack {
                 HStack {
                     CircularProfileImageView(user: user, size: .small)
-                    
+
                     VStack(alignment: .leading) {
                         Text(user?.userName ?? "")
                             .fontWeight(.semibold)
                         TextField("Start a thread ...", text: $caption, axis: .vertical)
                     }
                     .font(.footnote)
-                    
+
                     if !caption.isEmpty {
                         Button {
                             caption = ""
@@ -40,9 +40,9 @@ struct ThreadsCreationView: View {
                         }
                     }
                 }
-                
+
                 Spacer()
-                
+
             }
             .padding()
             .navigationTitle("New Thread")
@@ -57,7 +57,7 @@ struct ThreadsCreationView: View {
                     .font(.subheadline)
                     .foregroundStyle(Color(.black))
                 }
-                
+
                 ToolbarItem(placement: .topBarTrailing) {
                     Button {
                         Task {

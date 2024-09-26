@@ -9,20 +9,20 @@ import SwiftUI
 
 struct UserCell: View {
     let user: User
-    
+
     var body: some View {
         HStack {
             CircularProfileImageView(user: user, size: .small)
-            
+
             VStack(alignment: .leading, spacing: 2) {
                 Text(user.userName)
                     .fontWeight(.semibold)
                 Text(user.fullName)
             }
             .font(.footnote)
-            
+
             Spacer()
-            
+
             Text("Follow")
                 .font(.subheadline)
                 .fontWeight(.semibold)
